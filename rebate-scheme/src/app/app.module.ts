@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { OrdersCsvComponent } from './orders-csv/orders-csv.component';
+import { PlaceOrdersComponent } from './place-orders/place-orders.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OrdersCsvComponent,
+    PlaceOrdersComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,21 @@
-<div class="container">
-  <div class="row">
-    <div class="col-12 col-sm-12">
-      <h1>Hello</h1>
-    </div>
+
+<div class="container-fluid">
+  <div class="row" style="padding-top: 20px;">
+      <div class="col-sm-6">
+          <h3>Orders Management</h3>
+          <label>Upload a csv file with organ orders.</label><br/>
+          <input value="upload" type="file" class="upload" >
+      </div>
+    
+  </div>
+  <div class="row" style="padding-top: 20px;">
+      <div class="col-sm-6">
+        <orders-csv></orders-csv>
+      </div>
+      <div class="col-sm-6"> 
+        <place-orders></place-orders>
+        </div>
   </div>
 </div>
+
+
