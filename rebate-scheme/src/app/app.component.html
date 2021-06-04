@@ -1,20 +1,22 @@
-
 <div class="container-fluid">
-  <div class="row" style="padding-top: 20px;">
-      <div class="col-sm-6">
-          <h3>Orders Management</h3>
-          <label>Upload a csv file with organ orders.</label><br/>
-          <input value="upload" type="file" class="upload" >
-      </div>
-    
+  <div class="row">
+    <div class="col-12 col-sm-12">
+      <h3>Orders Management</h3>
+    </div>
   </div>
   <div class="row" style="padding-top: 20px;">
       <div class="col-sm-6">
-        <orders-csv></orders-csv>
+        <orders-csv [resultsArray]="resultArrayFromAppComponent" 
+        (sendCSVInputArray)="getCSVInputArrayInAppComponent($event)" 
+        (resultsArrayEmitter)="getResultsArrayInAppComponent($event)"></orders-csv>
+       
+        <button *ngIf="displayProcessOrderBtn" style="margin-top: 10px;"
+        (click)="processOrder()" type="button" class="btn btn-primary">Process orders</button> 
       </div>
       <div class="col-sm-6"> 
-        <place-orders></place-orders>
-        </div>
+        <div style="padding-top: 100px;"></div>
+      <order-results-view [resultsArray]="passResultsToResultsView" ></order-results-view>
+      </div>
   </div>
 </div>
 

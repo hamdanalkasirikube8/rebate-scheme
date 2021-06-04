@@ -1,0 +1,22 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  overflow: hidden;
+  width: 5%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mat-row:hover {
+  background-color: rgba(134, 134, 134, 0.747);
+}
+.mat-row.highlighted {
+  background-color: rgba(134, 134, 134, 0.493);
+}
+.mat-row {
+  cursor: pointer;
+}
