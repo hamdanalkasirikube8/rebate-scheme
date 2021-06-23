@@ -22,6 +22,7 @@ organ,cash,price,bonus_ratio
 | lung         | 25          | 3 |   4 |
 
 Example Order Output for given inputs
+|    |            |   |
 | ------------- |:-------------:| -----:|
 | heart 0         | liver 2          | lung 1 |   
 | heart 4        | liver 0            | lung 0 |   
