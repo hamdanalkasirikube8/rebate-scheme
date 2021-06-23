@@ -14,10 +14,17 @@ organ,cash,price,bonus_ratio
 "liver",10,5,2
 "heart",10,3,3
 "lung",25,3,4
+
+organ  | cash | price | bonus_ratio
+-----------------------------------
+"liver"| 10 | 5| 2
+"heart"| 10 | | 3
+"lung"|25|3|4
+
 Example Order Output
-heart 0, liver 2, lung 1
-heart 4, liver 0, lung 0
-heart 2, liver 2, lung 8
+heart 0| liver 2| lung 1
+heart 4| liver 0| lung 0
+heart 2| liver 2| lung 8
 
 As an explanation, the first order results in 2 livers and 1 lung because the customer has enough cash to purchase 2 livers outright (cash (10) / price (5) = result (2)). Following, they are able to take advantage of the liver => lung rebate as they meet the bonus_ratio criteria of 2:1 (purchased (2) / bonus_ratio (2) = bonuses (1)). If they had provided enough cash to purchase 4 livers, then they would have then been eligible to receive 2 bonuses (i.e. 2 lungs!).
 
