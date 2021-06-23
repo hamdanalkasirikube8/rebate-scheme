@@ -6,7 +6,7 @@ The application is based on a rebate scheme which gives free human organs. Given
 | -------------                   |:-------------:| 
 | heart x3                  | heart x1            |
 | liver x2                     | lung x1             | 
-| lung x4	liver x1        | heart x1          |
+| lung x4      | 	liver x1  heart x1          |
 
 The application when run, processes customer orders and outputs clear information regarding the total number of products the customer is to receive.
 The application read orders from csv files. Each line in the CSV will represent a single order. These orders will include a bonus_ratio, which serves as the actual ratio at which free products will be awarded for a given order. In other words, the bonus_ratio is the (N) value in the table above:
