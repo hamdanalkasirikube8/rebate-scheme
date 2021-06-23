@@ -15,11 +15,11 @@ organ,cash,price,bonus_ratio
 "heart",10,3,3
 "lung",25,3,4
 
-organ  | cash | price | bonus_ratio
------------------------------------
-"liver"| 10 | 5| 2
-"heart"| 10 | | 3
-"lung"|25|3|4
+| organ        | cash           | price  | bonus_ratio  |
+| ------------- |:-------------:| -----:|-----:|
+| liver         | 10            | 5 |   2 |
+| heart         | 10            | 3 |   3 |
+| lung         | 25          | 3 |   4 |
 
 Example Order Output
 heart 0| liver 2| lung 1
