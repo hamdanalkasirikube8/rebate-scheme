@@ -1,20 +1,17 @@
 # RebateScheme
 
 The application is based on a rebate scheme which gives free human organs. Given promotion scheme is as follows:
-organs (N) purchased	free organ(s) received
-heart x3	heart x1
-liver x2	lung x1
-lung x4	liver x1, heart x1
+| organs (N) purchased        | free organ(s) received   |
+| ------------- |:-------------:| -----:|-----:|
+| heart x3         | heart x1            | 5 |   2 |
+| liver x2         | lung x1            | 3 |   3 |
+| lung x4	liver x1        | heart x1          | 3 |   4 |
+
 The application when run, processes customer orders and outputs clear information regarding the total number of products the customer is to receive.
 The application read orders from csv files. Each line in the CSV will represent a single order. These orders will include a bonus_ratio, which serves as the actual ratio at which free products will be awarded for a given order. In other words, the bonus_ratio is the (N) value in the table above:
 
 Example Order Input
 // select a csv file
-organ,cash,price,bonus_ratio
-"liver",10,5,2
-"heart",10,3,3
-"lung",25,3,4
-
 | organ        | cash           | price  | bonus_ratio  |
 | ------------- |:-------------:| -----:|-----:|
 | liver         | 10            | 5 |   2 |
